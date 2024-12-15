@@ -1,15 +1,13 @@
-<html>
-
-<body>
-
-<font size="2" face="Arial">Le texte en HTML</font>
 <?php
-// le code PHP --------
+$select = array("ISIL1", "ISIL2", "SI1", "SI2");
 ?>
+<label for="specialite">Choix de specialite</label>
+<select name="specialite" id="specialite">
+    <?php
+      foreach($select as $choix){
+        $sel = ($choix === "SI1")? "selected" : "";
+        echo "<option value='$choix' $sel>$choix</option>" ;
+      }
 
-<!-- retour au code HTML -->
-<br>
-<font size="2" face="Arial"> Il est <?php echo 'Bonjour'; ?></font>
-</body>
-
-</html>
+?>
+</select>
