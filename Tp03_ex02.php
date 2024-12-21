@@ -7,15 +7,12 @@
 </head>
 <body>
     <form action="#" method="post">
+      
     <label for="options">Options : </label>
         <?php
         // Déclaration du tableau contenant les options
         $options = array('ISIL1', 'ISIL2', 'SI1', 'SI2');
-
-    
-        
-      
-        foreach ($options as $value) {
+          foreach ($options as $value) {
             echo "<option value=\"$value\">$value</option>";
       }  ?> 
         echo '</select>';
